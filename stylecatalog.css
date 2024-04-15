@@ -1,0 +1,922 @@
+.blok {  
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+body {
+    display: block;
+    margin: 8px;
+    background-color: #39313c;
+}
+ .blok_with_navigation {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;   
+    justify-content:space-around;
+    background-color: #e2dbd4;
+    
+}
+.panel_navigation {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    justify-content:space-evenly;
+    top: 20px;
+}
+.burger-checkbox {
+    position: absolute;
+    visibility:hidden;
+  }
+.logotip {
+    width: 100px;
+    height: auto;
+}
+.logotip_text{
+    text-decoration:none;
+    color: #6a5975;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    font-size:large;    
+    font-style: italic;
+    margin: 10px;
+}
+
+.sections {
+    width: 750px;
+    height: auto;
+}
+.menu_text_chapter {
+    display: flex; /* Отображать как строчный элемент */
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 7px;
+}
+.menu__item_chapter {
+     text-align:center;
+}
+#menu__link{
+    text-decoration:none;
+    color:#6a5975;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+}
+    
+#menu__link:hover {
+    color: #6a5975; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; 
+}
+.number_phone {
+    width: 150px;
+    height: auto;
+}
+.number_text{
+    text-decoration:none;
+    color:#6a5975;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+    text-align: right;
+    margin: 10px;
+}
+.button {
+    width: 200px;
+    height: 50px;    
+    justify-content: center;
+    padding-left: 10p;
+    text-align:center;
+}
+.button_1 {
+    width: 160px;
+    height: 30px;
+    border: 1px solid #6a5975;
+    border-radius: 150px/100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+}
+.button_2{
+    text-decoration:none;
+    color: #6a5975;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    font-size:large;
+    margin-top: 3px;
+    font-style: italic;
+}
+.blok_contacts_text_2{
+    color:#fcf6f6;
+    font-size:large;
+    background-color: #1a1919;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    
+}
+.phone_logotip{
+    width: 20px;
+    height: 20px;
+}
+
+.blok_after_navigation {
+    height: 1220px;
+    justify-content:space-evenly;
+    background-color: #392e3d;
+    display: flex;
+}
+
+  .block_section{
+    width: 250px;
+    background-color:#e2dbd4; 
+    margin-top: 40px;
+    height: 1160px;
+  }
+  .block_m {
+    height: 1160px;
+    width: 900px;
+    margin-top: 40px;
+    background-color:#e2dbd4; 
+}
+
+.cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 800px;
+    column-gap: 60px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    margin: 0 auto;
+  }
+
+  * {
+    box-sizing: border-box;
+ }
+ .product-wrap {
+    width: 220px;
+    height: 346px;
+    margin: 0 auto;
+    background: white;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Lora;
+    text-transform:uppercase;
+ }
+ .product-item {
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 243px;
+ }
+ .product-wrap img {
+    display: block;
+    width: 100%;
+ }
+ .product-buttons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(220, 217, 217, 0.8);
+    opacity: 0;
+    transition: .3s ease-in-out;
+ }
+ .button {
+    text-decoration: none;
+    color: #6a5975;
+    font-size: 12px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #6a5975;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s ease-in-out;
+ }
+ .button:before {
+    content: "\f07a";
+    font-family: FontAwesome;
+    margin-right: 10px;
+ }
+ .product-item:hover .product-buttons {
+    opacity: 1;
+ }
+ .product-item:hover .button {
+    transform: translate(-50%, -50%) scale(1);
+ }
+ .button:hover {
+    background: #e2dbd4;
+ }
+ .product-title {
+    color: #6a5975;
+ }
+ .product-title a {
+    text-decoration: none;
+    color: #6a5975;
+    font-weight: 400;
+    margin: 15px 0 5px;
+    padding-bottom: 7px;
+    display: block;
+    position: relative;
+    transition: .3s ease-in-out;
+ }
+ .product-title a:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #6a5975;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0;
+    transition: .3s ease-in-out;
+ }
+ .product-title a:hover {
+    color: #e2dbd4;
+ }
+ .product-title:hover a:after {
+    background: #e2dbd4;
+ }
+ .product-price {
+    font-size: 20px;
+    color: #6a5975;
+    font-weight: 100;
+ }
+
+ .push {
+    list-style: none;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 80px;
+    
+  }
+  .push li {
+    position: relative;
+    padding: 20px 0 20px 40px;
+    color: #6a5975;
+    font-variant: small-caps;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  .push li:before {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #6a5975;
+    content: "";
+    left: 0;
+    transition: .3s ease-in-out;
+    top: 27px;
+  }
+  .push li:after {
+    position: absolute;
+    border-left: 1px dotted #6a5975;
+    width: 1px;
+    bottom: -12px;
+    content: "";
+    left: 3px;
+    top: 48px;
+  }
+  .push li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+  .push li:last-child:after {content: none;}
+
+  ul.hr {
+    /* Обнуляем значение отступов и полей */
+    margin: 0; padding: 0;
+    text-align: center;
+    padding: 10px;
+
+   }
+   ul.hr li {
+    display: inline-block; /* Строчно-блочный элемент */
+    font-family:'Times New Roman', Times, serif;
+    color: #6a5975;
+    font-variant: small-caps;
+    font-weight: bold;
+   }
+
+   .block_cellar {
+    background-color: #e2dbd4;
+    margin-top: 10px;
+}
+
+.column2{
+    width: 200px;
+    display: inline-block;
+    border-radius: 10px;  
+   -moz-border-radius: 10px;  
+   -webkit-border-radius: 10px;  
+   color: #FFFFFF;
+   margin-right: 20px;
+}
+.column {
+    display: inline-block;
+    border-radius: 10px;  
+   -moz-border-radius: 10px;  
+   -webkit-border-radius: 10px;  
+   color: #FFFFFF;
+   height: 80px;
+   margin: 10px;
+}
+
+.cellar_logotip {
+    width: 200px;
+    height: 100px;
+}
+.cellar_logotip_block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 22px;
+}
+
+.cellar_logotip_text {
+    text-decoration:none;
+    color: #6a5975;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+    font-style: italic;
+}
+.cellar_information {
+    width: 200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cellar_information_block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+   .block_cellar_1 {
+    width: 1000px;
+    display: flex;
+    justify-content:space-around;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.information_column_2 {
+    width: 200px;
+    height: 50px;
+
+}
+.column2_text_2 {
+    text-decoration:none;
+    color: #6a5975;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    font-size:large;
+    font-style: italic;
+}
+.information_column_2_1 {
+    width: 200px;
+    height: 50px;
+}
+.column2_text_2_1 {
+    text-decoration:none;
+    color: #6a5975;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    font-size:large;
+    font-style: italic;
+}
+
+
+.information_column_1_1 {
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+}
+.column1_text_2_1 {
+    text-decoration:none;
+    color: #f5f2f7;
+    font-weight:lighter;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:large; 
+    font-style: italic;
+    text-shadow: 3px -4px 5px rgb(255, 233, 233);
+}
+@media  screen and (max-width:1300px) {
+    .blok {
+        width: 1100px;
+    }
+    .blok_with_navigation {
+        width: 1100px;
+    }
+    .panel_navigation {
+        width: 1100px;
+        height: auto;
+    }
+    .logotip{
+        width: 100px;
+    }
+  
+    .sections {
+        width: 600px;
+    }
+    #menu__link {
+        font-size: small;
+    }
+    .number_phone {
+        width: 80px;
+    }
+    .number_text {
+        font-size: small;
+        margin-top: 15px;
+    }
+    .button {
+        width: 150px;
+    }
+    .button_1 {
+        height: 20px;
+        margin-top: 10px;
+
+    }
+    .blok_contacts_text_2 {
+        font-size: small;
+    }
+    .phone_logotip {
+        width: 15px;
+        height: 15px;
+    }
+    .button_2 {
+        font-size: small;
+    }
+    .blok_after_navigation {
+        width: 1100px;
+    }
+    .block_section {
+        width: 180px;
+        height: fit-content;
+    }
+    .push li {
+        position: relative;
+    }
+    .block_m {
+        width: 800px;
+    }
+    .cards {
+
+        width: 700px;
+        column-gap: 10px;
+    }
+
+}
+@media  screen and (max-width: 1100px) {
+    .blok {
+        width: 900px;
+    }
+    .blok_with_navigation {
+        width: 900px;
+    }
+    .panel_navigation {
+        width: 900px;
+        height: auto;
+    }
+    .logotip{
+        width: 80px;
+    }
+    .logotip_text {
+        font-size: small;
+        margin-top: 14px;
+    }    
+    .sections {
+        width: auto;
+    }
+    .menu__item_chapter {
+        padding-right: 10px;
+    }
+    #menu__link {
+        font-size: small;
+    }
+    .number_phone {
+        width: auto;
+    }
+    .number_text {
+        font-size: small;
+    }
+    .button {
+        width: 150px;
+    }
+    .button_1 {
+        height: 20px;
+        width: 140px;
+    }
+    .blok_contacts_text_2 {
+        font-size: small;
+    }
+    .phone_logotip {
+        width: 15px;
+        height: 15px;
+    }
+    .button_2 {
+        font-size: small;
+    }
+    .blok_after_navigation {
+        width: 900px;
+    }
+    .block_section {
+        width: 170px;
+        height: fit-content;
+    }
+    .push li {
+        position: relative;
+    }
+    .block_m {
+        width: 700px;
+    }
+    .cards {
+        width: 700px;
+        column-gap: 10px;
+    }
+    .block_cellar_1 {
+        width: 900px;
+    }
+    .block_cellar {
+        width: 900px;
+    }
+    .cellar_logotip_block {
+        margin-top: 5px;
+        height: auto;
+        width: auto;
+    }
+}
+@media  screen and (max-width: 768px) {
+    .blok {
+        width: 600px;
+    }
+    .blok_with_navigation {
+        width: 600px;
+        height: 40px;
+    }
+    .panel_navigation {
+        width: 600px;
+    }
+    .logotip{
+        width: 70px;
+        height: 40px;
+    }
+    .logotip_text {
+        font-size: small;
+    }    
+    .sections {
+        width: 100px;
+        height: 40px;
+    }
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+    .burger {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+    margin-top: 6px;
+    }
+    .burger::before,
+    .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #6f5d7a;
+    }
+    .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #6f5d7a;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+    .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+    }
+    .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+    .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+    }
+    .menu_text_chapter {
+    top: 30px;
+    left: 0;
+    position: absolute;
+    display: -ms-inline-grid;
+    margin: 0;
+    background: #e2dbd4;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 768px;
+    }
+    .menu__item_chapter {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    }
+    .menu__item_chapter:hover {
+    background: rgba(255,255,255,.2)
+    }
+    .burger-checkbox:checked ~ .menu_text_chapter {
+    transform: translateX(0);
+    }
+
+    #menu__link {
+        font-size: small;
+    }
+    .number_phone {
+        width: 80px;
+        height: 40px;
+    }
+    .number_text {
+        font-size: small;
+    }
+    .button {
+        width: 200px;
+        height: 40px;
+    }
+    .button_1 {
+        height: 20px;
+    }
+    .blok_contacts_text_2 {
+        font-size: small;
+    }
+    .phone_logotip {
+        width: 15px;
+        height: 15px;
+    }
+    .button_2 {
+        font-size: small;
+        margin-top: 1px;
+    }
+    .blok_after_navigation {
+        width: 600px;
+        height: fit-content;
+    }
+    .block_section {
+        width: 130px;
+        height: fit-content;
+    }
+    .push {
+        padding: 20px;
+    }
+    .push li {
+        position: relative;
+        padding: 10px 0 20px 30px;
+    }
+
+    .block_m {
+        width: 450px;
+        height: auto;
+    }
+    .cards {
+        width: 450px;
+        column-gap: 0px;
+    }
+    .block_cellar_1 {
+        width: 600px;
+    }
+    .block_cellar {
+        width: 600px;
+    }
+    .column {
+        width: fit-content;
+    }
+    .cellar_information {
+        width: fit-content;
+    }
+    .cellar_logotip_text {
+        font-size: small;
+    }
+    .cellar_logotip {
+        width: auto;
+        height: auto;
+    }
+    .cellar_logotip_block {
+        padding-top: 5px;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    .blok {
+        width: 400px;
+    }
+    .blok_with_navigation {
+        width: 400px;
+    }
+    .panel_navigation {
+        width: 400px;
+    }
+    .logotip{
+        width: 80px;
+    }
+    .logotip_text {
+        font-size: small;
+    }    
+    .sections {
+        width: auto;
+    }
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+    .burger {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+    margin-top: 3px;
+    }
+    .burger::before,
+    .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #6f5d7a;
+    }
+    .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #6f5d7a;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+    .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+    }
+    .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+    .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+    }
+    .menu_text_chapter {
+        top: 25px;
+        left: 0;
+        position: absolute;
+        display: -ms-inline-grid;
+        margin: 0;
+        background: #e2dbd4;
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: .3s;
+        width: auto;
+        padding: 0;
+    }
+    .menu__item_chapter {
+    display: block;
+    padding: 2px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    }
+    .menu__item_chapter:hover {
+    background: rgba(255,255,255,.2)
+    }
+    #menu__link {
+        font-size: small;
+    }
+    .number_phone {
+        width: auto;
+        height: fit-content;
+    }
+    .number_text {
+        font-size: small;
+        height: fit-content;
+    }
+    .button {
+        width: auto;
+        height: fit-content;
+    }
+    .button_1 {
+        height: 20px;
+        width: 120px;
+    }
+    .blok_contacts_text_2 {
+        font-size: small;
+    }
+    .phone_logotip {
+        width: 15px;
+        height: 15px;
+    }
+    .button_2 {
+        font-size: small;
+    }
+    .blok_after_navigation {
+        width: auto;
+        height: auto;
+    }
+    .block_section {
+        width: 130px;
+        height: fit-content;
+    }
+    .push {
+        padding: 20px;
+    }
+    .push li {
+        position: relative;
+        padding: 10px 0 20px 20px;
+    }
+    .block_m {
+        width: 200px;
+        height: auto;
+    }
+    .cards {
+        width: 200px;
+        column-gap: 40px;
+    }
+    .product-wrap {
+        width: 200px;
+        margin: 0;
+    }
+    .product-item {
+        width: 200px;
+    }
+    .block_cellar {
+        height: fit-content;
+    }
+    .block_cellar_1 {
+        width: 400px;
+        height: fit-content;
+    }
+    .column {
+        width: 120px;
+        height: fit-content;
+    }
+    .cellar_information {
+        width: 120px;
+        height: fit-content;
+    }
+    .cellar_logotip {
+        width: 100px;
+        height: fit-content;
+    }
+    .cellar_logotip_text {
+        font-size: small;
+    }
+    .cellar_logotip_block {
+        width: 100px;
+        height: fit-content;
+    }
+
+}
